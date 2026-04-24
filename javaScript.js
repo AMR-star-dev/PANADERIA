@@ -1,10 +1,10 @@
 const productos = [
-    { id: 1, nombre: 'Baguette', categoria: 'panes', precio: 1.50, descripcion: 'Pan francés crujiente por fuera y suave por dentro.' },
-    { id: 2, nombre: 'Pan integral', categoria: 'panes', precio: 2.20, descripcion: 'Hecho con harina integral y semillas saludables.' },
-    { id: 3, nombre: 'Croissant', categoria: 'pasteles', precio: 1.80, descripcion: 'Mantequilla y hojaldre dorado, perfecto para el desayuno.' },
-    { id: 4, nombre: 'Tarta de manzana', categoria: 'pasteles', precio: 12.00, descripcion: 'Tarta casera con manzana y canela.' },
-    { id: 5, nombre: 'Galletas de chocolate', categoria: 'galletas', precio: 0.90, descripcion: 'Galletas suaves con trozos de chocolate.' },
-    { id: 6, nombre: 'Galleta de avena', categoria: 'galletas', precio: 0.95, descripcion: 'Galleta nutritiva con avena y miel.' }
+    { id: 1, nombre: 'Baguette', categoria: 'panes', precio: 1.50, descripcion: 'Pan francés crujiente por fuera y suave por dentro.', img: 'img/baguettes.jpg' },
+    { id: 2, nombre: 'Pan integral', categoria: 'panes', precio: 2.20, descripcion: 'Hecho con harina integral.', img: 'img/integral.jpg' },
+    { id: 3, nombre: 'Croissant', categoria: 'pasteles', precio: 1.80, descripcion: 'Mantequilla y hojaldre.', img: 'img/croissant.jpg' },
+    { id: 4, nombre: 'Tarta de manzana', categoria: 'pasteles', precio: 12.00, descripcion: 'Tarta casera.', img: 'img/manzana.jpg' },
+    { id: 5, nombre: 'Galletas de chocolate', categoria: 'galletas', precio: 0.90, descripcion: 'Con trozos de chocolate.', img: 'img/chocolate.jpg' },
+    { id: 6, nombre: 'Galleta de avena', categoria: 'galletas', precio: 0.95, descripcion: 'Con avena y miel.', img: 'img/avena.jpg' }
 ];
 
 const carrito = [];
@@ -20,6 +20,7 @@ function cargarProductos(productosAMostrar = productos) {
         const card = document.createElement('article');
         card.className = 'producto-card';
         card.innerHTML = `
+            <img src="${producto.img}" class="producto-img" alt="${producto.nombre}">
             <div>
                 <h3>${producto.nombre}</h3>
                 <span class="producto-categoria">${producto.categoria}</span>
