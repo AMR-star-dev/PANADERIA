@@ -5,11 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
     <link rel="stylesheet" href="styles.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Carrito de Compras</h1>
-    <p>Aquí puedes revisar los productos que has agregado a tu carrito y proceder con tu
-   
+
+    <!-- Header -->
+    <header class="header">
+        <h1>🛒 Mi Carrito</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="cart">
+            <h2>Productos en tu carrito</h2>
+
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <tr>
+                        <td>Ejemplo Producto</td>
+                        <td>$10.00</td>
+                        <td>
+                            <input type="number" value="1" min="1">
+                        </td>
+                        <td>$10.00</td>
+                        <td>
+                            <button class="btn-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <aside class="summary">
+            <h2>Resumen</h2>
+            <p>Subtotal: <span id="subtotal">$10.00</span></p>
+            <p>Impuestos: <span id="tax">$1.80</span></p>
+            <h3>Total: <span id="total">$11.80</span></h3>
+
+            <button class="btn-checkout">Finalizar Compra</button>
+        </aside>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mi Tienda Online | Todos los derechos reservados</p>
+    </footer>
 
     <script src="javaScript.js"></script>
 </body>

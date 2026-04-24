@@ -5,11 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configuración</title>
     <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Configuración</h1>
-    <p>Aquí puedes configurar tus preferencias y ajustes de la cuenta.</p>
-   
+
+    <header class="header">
+        <h1>⚙️ Configuración</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Perfil</a>
+            <a href="#">Carrito</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="settings-section">
+            <h2>Información de la cuenta</h2>
+
+            <form id="account-form">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" placeholder="Tu nombre">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" placeholder="correo@ejemplo.com">
+
+                <label for="password">Nueva contraseña</label>
+                <input type="password" id="password" placeholder="********">
+
+                <button type="submit" class="btn-primary">Guardar cambios</button>
+            </form>
+        </section>
+
+    
+        <section class="settings-section">
+            <h2>Preferencias</h2>
+
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="notifications">
+                    Recibir notificaciones por correo
+                </label>
+            </div>
+
+            <div class="option">
+                <label>
+                    <input type="checkbox" id="dark-mode">
+                    Activar modo oscuro
+                </label>
+            </div>
+        </section>
+
+        <section class="settings-section">
+            <h2>Seguridad</h2>
+
+            <button class="btn-danger">Cerrar sesión</button>
+            <button class="btn-warning">Eliminar cuenta</button>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mi Aplicación | Configuración de usuario</p>
+    </footer>
 
     <script src="javaScript.js"></script>
 </body>

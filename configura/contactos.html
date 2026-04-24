@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactos</title>
+    <title>Contacto</title>
     <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Contactos</h1>
-   
+
+    <header class="header">
+        <h1>📞 Contacto</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Carrito</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="contact-info">
+            <h2>Información</h2>
+            <p>Puedes comunicarte con nosotros a través de los siguientes medios:</p>
+
+            <ul>
+                <li><strong>Email:</strong> soporte@mitienda.com</li>
+                <li><strong>Teléfono:</strong> +51 999 999 999</li>
+                <li><strong>Dirección:</strong> Lima, Perú</li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Envíanos un mensaje</h2>
+
+            <form id="form-contacto">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required>
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                <button type="submit" class="btn-primary">Enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mi Tienda | Página de contacto</p>
+    </footer>
 
     <script src="javaScript.js"></script>
 </body>
