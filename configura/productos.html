@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <h1>🛍️ Productos</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Carrito</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="filters">
+            <h2>Filtrar productos</h2>
+
+            <input type="text" id="search" placeholder="Buscar producto...">
+
+            <select id="category">
+                <option value="">Todas las categorías</option>
+                <option value="ropa">Ropa</option>
+                <option value="tecnologia">Tecnología</option>
+                <option value="hogar">Hogar</option>
+            </select>
+        </section>
+
+        <section class="product-grid" id="product-list">
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Producto">
+                <h3>Producto Ejemplo</h3>
+                <p class="price">$25.00</p>
+                <button class="btn-add">Agregar al carrito</button>
+            </div>
+
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150" alt="Producto">
+                <h3>Producto 2</h3>
+                <p class="price">$40.00</p>
+                <button class="btn-add">Agregar al carrito</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mi Tienda | Catálogo de productos</p>
+    </footer>
+
+    <script src="javaScript.js"></script>
+</body>
+</html>
