@@ -24,6 +24,7 @@ button {
     margin: 0 auto;
 }
 
+
 .header {
     background: #ffffffcc;
     position: sticky;
@@ -32,17 +33,21 @@ button {
     border-bottom: 1px solid #eee;
 }
 
+
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 0.8rem 0;
 }
+
 
 .logo a {
     font-size: 1.5rem;
     font-weight: 700;
+    color: #d87d3a;
 }
+
 
 .navbar ul {
     list-style: none;
@@ -52,6 +57,7 @@ button {
     margin: 0;
     padding: 0;
 }
+
 
 .navbar a,
 .carrito-btn {
@@ -65,6 +71,33 @@ button {
 .carrito-btn:hover {
     background: #f2d1b3;
 }
+
+/* 🛒 CARRITO */
+.carrito-btn {
+    background: #fff3e8;
+    font-weight: 600;
+}
+
+.registro-box {
+    display: flex;
+    align-items: center;
+}
+
+.btn-registro {
+    background: linear-gradient(135deg, #ff7a18, #d87d3a);
+    color: #fff;
+    padding: 0.65rem 1.2rem;
+    border-radius: 999px;
+    font-weight: 700;
+    box-shadow: 0 6px 15px rgba(216,125,58,0.3);
+    transition: all 0.2s ease;
+}
+
+.btn-registro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(216,125,58,0.4);
+}
+
 
 .hero {
     background: linear-gradient(135deg, #f8e8d8 0%, #fff4e6 100%);
@@ -82,6 +115,7 @@ button {
     font-size: 1.1rem;
     color: #6b4f34;
 }
+
 
 .btn-primario,
 .btn-secundario {
@@ -104,6 +138,7 @@ button {
     color: #4d3a2e;
     border: 1px solid #d9c2af;
 }
+
 
 .section-header {
     display: flex;
@@ -146,6 +181,7 @@ button {
     gap: 1.5rem;
 }
 
+
 .producto-card {
     background: #fff;
     border-radius: 1rem;
@@ -156,34 +192,6 @@ button {
     gap: 1rem;
 }
 
-.producto-card h3 {
-    margin: 0;
-}
-
-.producto-card p {
-    margin: 0;
-    color: #6b4f34;
-    line-height: 1.5;
-}
-
-.producto-categoria {
-    display: inline-block;
-    background: #f4e0d1;
-    color: #7f4d2f;
-    border-radius: 999px;
-    padding: 0.25rem 0.6rem;
-    font-size: 0.85rem;
-}
-
-.producto-precio {
-    font-size: 1.3rem;
-    font-weight: 700;
-    color: #d87d3a;
-}
-
-.producto-card button {
-    margin-top: auto;
-}
 
 .modal {
     display: none;
@@ -207,54 +215,6 @@ button {
     position: relative;
 }
 
-.cerrar {
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #4d3a2e;
-}
-
-.total-carrito {
-    margin-top: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.contacto-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
-    padding: 4rem 0;
-}
-
-.contacto-texto h2,
-.contacto-texto p {
-    margin: 0 0 1rem;
-}
-
-.formulario-contacto {
-    display: grid;
-    gap: 1rem;
-}
-
-.formulario-contacto input,
-.formulario-contacto textarea {
-    width: 100%;
-    border: 1px solid #d9c2af;
-    border-radius: 0.75rem;
-    padding: 0.9rem 1rem;
-    font-size: 1rem;
-}
-
-.formulario-contacto button {
-    align-self: start;
-}
 
 .footer {
     background: #fff;
@@ -262,25 +222,11 @@ button {
     border-top: 1px solid #eee;
 }
 
-.footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.footer a {
-    color: #4d3a2e;
-}
 
 @media (max-width: 768px) {
-    .header-content,
-    .footer-content,
-    .section-header,
-    .contacto-section {
+    .header-content {
         flex-direction: column;
-        align-items: stretch;
+        gap: 0.5rem;
     }
 
     .navbar ul {
