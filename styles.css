@@ -39,25 +39,25 @@ button {
     padding: 1rem 0;
 }
 
-/* Modifica la regla existente de .logo a */
+
 .logo a {
     display: flex;
     align-items: center;
-    gap: 0.75rem;  /* Espacio entre el texto y el logo */
+    gap: 0.75rem;  
     font-size: 1.5rem;
     font-weight: 700;
 }
 
 .logo-texto {
-    color: #d87d3a;  /* Color panadero para el texto */
-    order: 1;  /* Esto coloca el texto a la izquierda */
+    color: #d87d3a;  
+    order: 1; 
 }
 
 .logo img {
     display: block;
     max-height: 50px;
     width: auto;
-    order: 2;  /* Esto coloca la imagen a la derecha del texto */
+    order: 2;  
 }
 
 .logo img:hover {
