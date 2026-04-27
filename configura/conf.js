@@ -1,17 +1,12 @@
-// ========== JavaScript UNIFICADO PARA TODAS LAS PÁGINAS ==========
-// Panadería - Funciones globales
-
-// ========== VARIABLES GLOBALES ==========
 let productosFiltrados = [];
 
-// ========== BASE DE DATOS DE PRODUCTOS ==========
 const productosData = [
     {
         id: 1,
         nombre: "Pan Francés",
         precio: 2.50,
         categoria: "panes",
-        imagen: "https://via.placeholder.com/150?text=Pan+Francés",
+        imagen: "img1/Pan Frances.jpg",
         descripcion: "Delicioso pan francés crujiente por fuera y suave por dentro"
     },
     {
@@ -19,7 +14,7 @@ const productosData = [
         nombre: "Croissant",
         precio: 3.00,
         categoria: "pasteles",
-        imagen: "https://via.placeholder.com/150?text=Croissant",
+        imagen: "img1/Croissant.jpg",
         descripcion: "Croissant de mantequilla, hojaldrado y dorado"
     },
     {
@@ -27,7 +22,7 @@ const productosData = [
         nombre: "Pan Integral",
         precio: 3.50,
         categoria: "panes",
-        imagen: "https://via.placeholder.com/150?text=Pan+Integral",
+        imagen: "img1/Pan Integral.avif",
         descripcion: "Pan 100% integral, rico en fibra"
     },
     {
@@ -35,7 +30,7 @@ const productosData = [
         nombre: "Pastel de Chocolate",
         precio: 15.00,
         categoria: "pasteles",
-        imagen: "https://via.placeholder.com/150?text=Pastel+Chocolate",
+        imagen: "img1/Pastel de chocolate.avif",
         descripcion: "Jugoso pastel de chocolate con cobertura"
     },
     {
@@ -43,7 +38,7 @@ const productosData = [
         nombre: "Galletas de Avena",
         precio: 5.00,
         categoria: "galletas",
-        imagen: "https://via.placeholder.com/150?text=Galletas+Avena",
+        imagen: "img1/Galletas de avena.jpg",
         descripcion: "Galletas saludables de avena y miel"
     },
     {
@@ -51,7 +46,7 @@ const productosData = [
         nombre: "Empanada de Carne",
         precio: 4.00,
         categoria: "salados",
-        imagen: "https://via.placeholder.com/150?text=Empanada+Carne",
+        imagen: "img1/empanada.webp",
         descripcion: "Empanada horneada rellena de carne jugosa"
     },
     {
@@ -59,7 +54,7 @@ const productosData = [
         nombre: "Pan de Muerto",
         precio: 8.00,
         categoria: "panes",
-        imagen: "https://via.placeholder.com/150?text=Pan+Muerto",
+        imagen: "img1/pan_de_muerto.jpg",
         descripcion: "Pan tradicional con azúcar y naranja"
     },
     {
@@ -67,7 +62,7 @@ const productosData = [
         nombre: "Tarta de Fresa",
         precio: 18.00,
         categoria: "pasteles",
-        imagen: "https://via.placeholder.com/150?text=Tarta+Fresa",
+        imagen: "img1/Tarta de fresa.jpg",
         descripcion: "Tarta fresca con crema pastelera y fresas naturales"
     }
 ];
